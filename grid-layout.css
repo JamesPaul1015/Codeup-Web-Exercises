@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 120px;
+    min-height: 100vh;
+    width: 80%;
+    margin:0 auto;
+    background-color: red;
+}
+.row {
+    width: 100%;
+    background-color: aqua;
+    height: 100%;
+}
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.two-thirds,
+.one-half,
+.one-third,
+.one-sixth,
+.one-eighth,
+float: left;
+ width: 100%;
+
+
+@media screen and (min-width: 768px);
+
+.two-thirds {
+    width: 66.6666%;
+
+}
+.one-half {
+    width:50%;
+    height:100%;
+    border:1px solid blue;
+    box-sizing: 50%;
+
+}
+.one-third {
+    width: 33.33333%;
+
+}
+.one-sixth {
+    width: 16.6666%;
+
+}
+.one-eighth {
+    width:"";
+
+}
+
+
