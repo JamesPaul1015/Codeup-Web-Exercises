@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></>
+    <link rel="stylesheet" href="css/bootstrap.css"></>
+    <title>Pizza World</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {margin:0;
+        background-color: white;}
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: transparent;
+        }
+
+        .active {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><a class="active" href="#home">Pizza World</a></li>
+    <li><a class="active" href="#news">Order Online</a></li>
+    <li><a class="active" href="#contact">Menu</a></li>
+    <li><a class="active" href="#about">Zip Code</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:transparent;height:1500px;">
+<div class="jumbotron";>
+     <img src="jumbotron.png"
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p></div>
+<div class="container">
+    <h1>Build Your Own Pizza!</h1></div>
+    <button role="presentation" class="btn btn-primary"><span class="badge">1 </span>Size and Crust </button>
+    <button type="button" class="btn btn-success"><span class="badge">2 </span>Cheese and Sauce </button>
+    <button type="button" class="btn btn-danger"><span class="badge">3 </span>Toppings </button>
+
+<main>
+        <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Choose Size and Crust</div>
+                    <div class="panel-body">Hand-Tossed</div>
+                    <div class="panel-heading">Garlic Seasoned Crust with seasoned buttery taste</div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Small (10")
+                        </label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Medium (12")
+                            </label>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">Crunchy Thin Crust</div>
+                    <div class="panel-body">Thin Enough for the Optimum Crispy to Crunchy Ratio</div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">
+                            Medium (12")
+                        </label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Large (14")
+                            </label>
+                            <footer>
+                                <div class="text-right" role="group" aria-label="<select [(ngModel)]=">
+                                <option *ngFor="let item of list" value="item"></option>
+                                </select>
+                                    <button type="button" class="btn btn-blue">Next Step</button>
+                                </div>
+
+                            </footer>
+
+                    <h1>Cheese?</h1>
+                    <select class="form-control">
+                        <div class="panel-heading">Cheese?</div>
+                        <option>Light</option>
+                        <option>Normal</option>
+                        <option>Extra</option>
+                        <option>Double</option>
+                    </select>
+                    <h1>Sauce?</h1>
+                    <select class="form-control">
+                        <div class="panel-heading">Cheese?</div>
+                        <option>Tomato Sauce</option>
+                        <option>Marinara</option>
+                        <option>BBQ Sauce</option>
+                        <option>Alfredo Sauce</option>
+                    </main>
+                    </select>
+<footer>
+    <div class="text-right" role="group" aria-label="<select [(ngModel)]=">
+        <option *ngFor="let item of list" value="item"></option>
+        </select>
+        <button type="button" class="btn btn-red">Previous Step     Next Step</button>
+    </div>
+
+</footer>
+<h1>Choose Toppings</h1>
+<div class="panel panel-default">
+    <div class="panel-body"></div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">
+            Beef
+        </label>
+        <lable>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                Ham
+            </label></div>
+            <label>
+                <input type="checkbox" value="">
+                Philly Steak
+                </label>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Bacon
+                    </label>
+                    <h1>Choose Non-meats</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-body"></div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                Green Peppers
+                            </label>
+                            <lable>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Mushrooms
+                                    </label></div>
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Onions
+                                </label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Jalapeno peppers
+                                    </label>
+                                </div>
+                                <footer>
+                                    <div class="text-right" role="group" aria-label="<select [(ngModel)]=">
+                                        <option *ngFor="let item of list" value="item"></option>
+                                        </select>
+                                        <button type="button" class="btn btn-blue">Check-Out</button>
+                                    </div>
+
+                                </footer>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
