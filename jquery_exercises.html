@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Parks</title>
+</head>
+<body>
+        <h1>Parks List</h1>
+        <h2>Register Here</h2>
+<h3 id="national-parks-toggle">National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+<h3 id="state-parks-texas-toggle">State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script>
+ 	"use strict";
+
+    
+    $("document").ready(function(){
+        $("ul").hide();
+    $('#national-parks-toggle').click(function() {
+        $('#national-parks').slideToggle();
+    });
+    $('#state-parks-texas-toggle').click(function() {
+        $('#state-parks-texas').slideToggle();
+    });
+    $("h2").hide().delay(8000).fadeIn();
+});
+  
+</script>
+	</script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").delay("slow").fadeIn();
+    $("#div2").delay("fast").fadeIn();
+    $("#div3").delay(800).fadeIn();
+    $("#div4").delay(2000).fadeIn();
+    $("#div5").delay(4000).fadeIn();
+  });
+});
+</script>
+</head>
+<body>
+
+
+<button>Click to fade in boxes with a delay</button>
+<br><br>
+
+<div id="div1" style="width:90px;height:90px;display:;background-color:black;"></div><br>
+<div id="div2" style="width:90px;height:90px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:90px;height:90px;display:none;background-color:blue;"></div><br>
+<div id="div4" style="width:90px;height:90px;display:none;background-color:red;"></div><br>
+<div id="div5" style="width:90px;height:90px;display:none;background-color:purple;"></div><br>
+
+
+
+</body>
+</html> -->

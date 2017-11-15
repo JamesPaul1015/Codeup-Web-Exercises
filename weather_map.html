@@ -1,10 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="weather, world, openweathermap, weather, layer">
+    <meta name="description" content="A layer with current weather conditions in cities for world wide">
+    <meta name="domain" content="openweathermap.org">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
 </head>
 <body>
-$END$
+<div style="font-size: medium; font-weight: bold; margin-bottom: 0px;">San Antonio</div>
+<div style="float: left; width: 130px;">
+    <div style="display: block; clear: left;">
+        <div style="float: left;" title="Titel">
+            <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/50d.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png">
+        </div>
+        <div style="float: left;">
+            <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">80°F</div>
+            <div style="display: block; width: 85px; overflow: visible;"></div>
+        </div>
+    </div>
+    <div style="display: block; clear: left; font-size: small;">Clouds: 90%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;">Humidity: 81%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;">Wind: 4.6 m/s</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;">Pressure: 1012hpa</div>
+</div>
+<div style="display: block; clear: left; color: gray; font-size: x-small;">
+    <a href="http://openweathermap.org/city/?utm_source=openweathermap&amp;utm_medium=widget&amp;utm_campaign=html_old" target="_blank">More..</a>
+</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<title>Weather Map</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<style>
+
+    #map {
+        height: 481px;
+        width: 80vw;
+    }
+
+</style>
+
+</head>
+<body>
+
+<main class="container">
+
+    <h1 class="text-center">Weather Map</h1>
+
+    <br>
+
+    <div class="center-block" id="map"></div>
+
+</main>
+
+<!-- jQuery Version 2.2.4 -->
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC85yqmI9_C6jElbp34vVRa9cqpM2VzUpk"></script>
+
+
+<!-- Custom JS -->
+<script>
+
+    "use strict";
+
+    // ============== BUILD MAP
+    var mapOptions = {
+        zoom: 10,
+        center: {
+            lat:  29.43720561062326,
+            lng: -98.48419189453125
+        }
+    };
+
+
+    function initMap(optionsObject) {
+        return new google.maps.Map(document.getElementById("map"), optionsObject);
+    }
+
+    var map = initMap(mapOptions);
+
+
+    //  ============== GEOCODING
+
+    function getLocation(address) {
+
+        var geocoder = new google.maps.Geocoder();
+
+        geocoder.geocode({address: "address"}, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                var position = results[0].geometry.location;
+                return position;
+            } else {
+                return alert("Geocoding unsuccessful");
+            }
+        });
+
+    }
+
+
+
+    //  ============== ADD MARKER AND INFO WINDOW
+
+    function addMarkerAndInfoWindow(position, name, infoText) {
+
+        var marker = new google.maps.Marker({
+            position: mapOptions.center,
+            map: map
+        });
+
+        var infoWindowContent = '<h3>' + name + '</h3>';
+        infoWindowContent += '<p>' + infoText + '</p>';
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: infoWindowContent
+        });
+
+        infoWindow.open(map, marker);
+
+    }
+    map.addListener("click", function(e) {
+        var latitude = e.latLng.lat();
+        var longitude = e.latLng.lng();
+        console.log("latitude : " + latitude + " longitude : " + longitude)
+    });
+
+
+
+</script>
+
 </body>
 </html>

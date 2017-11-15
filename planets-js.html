@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Planets</title>
+<script>"use strict"
+
+
+var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+console.log(planets);
+function logPlanets() {
+    console.log("Here is the list of Planets: ");
+    console.log(planets);
+
+}
+console.log("Adding the sun to the beginning of the planets array.");
+    planets.unshift("The Sun");
+        logPlanets();
+console.log("Adding Pluto to the end of the planets array.");
+    planets.push("Pluto");
+        logPlanets();
+console.log("Removing The Sun from the beginning of the planets array.");
+    planets.shift();
+        logPlanets();
+console.log("Removing Pluto from the end of the planets array.");
+    planets.pop();
+        logPlanets();
+console.log("Finding and logging the index of Earth in the planets array.");
+    var indexOfEarth = planets.indexOf("Earth");
+    console.log(indexOfEarth);
+console.log("Using splice to remove the planet after Earth.");
+    var planetAfterEarth = planets.splice(indexOfEarth + 1, 1);
+        logPlanets();
+console.log("Using splice to add back the planet after Earth.");
+        planets.splice(indexOfEarth + 1, 0, planetAfterEarth[0]);
+        logPlanets();
+console.log("Reversing the order of the planets array.");
+        planets.reverse();
+        logPlanets();
+console.log("Sorting the planets array.");
+        planets.sort();
+        logPlanets();
+
+
+
+
+
+
+
+
+//    var planetsAsString = planets.join("|");
+//    console.log(planetsAsString);
+//    var planetsAsArray = planetsAsString.split("|");
+//console.log(planetsAsArray);
+//
+//
+//
+//
+//var planetsWithBreaks = planetsArray.join("<br>");
+//console.log(planetsWithBreaks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//function convertTime12to24(time12h) {
+//    const [time, modifier] = time12h.split(' ');
+//
+//    let [hours, minutes] = time.split(':');
+//
+//    if (hours === '12') {
+//        hours = '00';
+//    }
+//
+//    if (modifier === 'PM') {
+//        hours = parseInt(hours, 10) + 12;
+//    }
+//
+//    return hours + ':' + minutes;
+//}
+//
+//console.log(convertTime12to24('01:00 PM'));
+//console.log(convertTime12to24('09:00 PM'));
+//console.log(convertTime12to24('09:00 AM'));
+//console.log(convertTime12to24('12:00 PM'));
+//console.log(convertTime12to24('12:00 AM'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </head>
 <body>
-$END$
+
+
+
+
+
+
+
 </body>
 </html>

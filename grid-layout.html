@@ -5,51 +5,92 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid Test</title>
-    <link rel=stylesheet" href="css/grid-layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></>
+    <link rel="stylesheet" href="css/bootstrap.css"></>
+    <title>Grid</title>
+    <div class="row">
+        <div class="col-md-4">This Is Where We Add Text!</div>
+        <div class="col-md-4 col-md-offset-4">Put Some Text Here!</div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">Put Even More Text Here!</div>
+        <div class="col-md-3 col-md-offset-3">Now More Text!?</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">It's Just Getting Ridiculous Now! </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-offset-1">
+                <p>Consectetur reprehenderit magnam nostrum quod reprehenderit. Inventore repellat eum facilis illum dolor doloribus, eius quibusdam suscipit delectus vitae. Explicabo beatae vitae quos laborum expedita hic, maiores ipsa eaque? Nobis repudiandae!</p>
+            </div>
+            <div class="col-lg-3 col-md-offset-4">
+                <p>Elit rerum asperiores nostrum ipsum sint debitis et, quos harum. Ut reiciendis id dolorem dolorum ad ex in. Illo odit atque dolore corporis vero? Voluptatum cupiditate quisquam perspiciatis obcaecati neque.</p>
+            </div>
+            <div class="col-lg-3 col-md-offset-8">
+                <p>Sit quibusdam dolorum delectus ducimus consequatur ullam cupiditate quia sit, laboriosam distinctio distinctio est blanditiis vitae laudantium dolore? Tempore doloremque aspernatur repellat consectetur sit vero velit possimus suscipit? Odit doloremque?</p>
+            </div>
+            <div class="col-lg-3 col-md-offset-3">
+                <p>Consectetur doloribus dolor quia iste sint! Totam suscipit possimus deserunt adipisci beatae? Mollitia explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis illo doloribus. Enim iste.</p>
+            </div>
 
+
+
+    <style>
+        body {
+            margin: 0%;
+        }
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+            width: 98%;
+            background-color: transparent;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .row {
+            width: 100%;
+            background-color: lavender;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-1 {
+            width: 100%;
+            float: left;
+            background-color: darkseagreen;
+        }
+        .col-5 {
+            width: 100%;
+            float: right;
+            background-color: darkseagreen;
+        }
+        .col-offset-5 {
+            margin-left: 50%;
+        }
+        .box {
+            border: 1px solid red;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 <body>
 
-
-<main class=".container">
-    </div>
-
-    <div class="row spacing">
-        <div class="one-half box">1/2</div>
-        <div class="one-half box">1/2</div>
-    </div>
-
-    <div class="row">
-        <div class="one-third box">1/3</div>
-        <div class="one-third box">1/3</div>
-        <div class="one-third box">1/3</div>
-    </div>
-
+<main class="container">
     <div class="row">
 
-        <div class="one-fourth box">1/4</div>
-        <div class="one-fourth box">1/4</div>
-        <div class="one-fourth box">1/4</div>
-        <div class="one-fourth box">1/4</div>
-    </div>
-    <div class="row">
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-    </div>
-    <div class="row">
-        <div class="one-fourth box">1/4</div>
-        <div class="one-half box">1/2</div>
-        <div class="one-eighth box">1/8</div>
-        <div class="one-eighth box">1/8</div>
-    </div>
+        <div class="col-5 box">
+            <h1>Now We Start A Row!</h1>
+        </div>
 
+        <div class="col-5 box">
+            <h1>And Another One!</h1>
+        </div>
 
+    </div>
 </main>
 
 

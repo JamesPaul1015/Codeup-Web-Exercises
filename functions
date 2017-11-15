@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+    <title>Functions JS</title>
+</head>
+<body>
+    <script>
+        "use strict";
+//        var myNameis= "Paul"
+//
+//            function sayHello(name){
+//            console.log("Hello," + name + "!")
+//        }
+//        sayHello(myNameis)
+//
+//
+//
+//        var random = Math.floor((Math.random() * 3) + 1);
+//
+//        function isTwo(numberToTest) {
+//            console.log(numberToTest = random) ? console.log("Number was 2!") : console.log("Number was not 2!")
+//        }
+//        isTwo(random)
+//
+//        var tipAmount = 0;
+//        var tipRate = .20;
+//        var billAmount = prompt("How Much Did You Pay For Dinner?:" );
+//
+//        function getTipAmount(billAmount, tipRate) {
+//            tipAmount = (billAmount * tipRate);
+//            return Math.round(tipAmount);
+//        }
+//
+//        getTipAmount(billAmount, tipRate)
+//        alert ("Then You Should Tip Them At Least This Much Please: $" + tipAmount);
+//        console.log ("Then Tip Them This Much Please: $" + tipAmount);
+//
+//
+//        function returnTwo(number){
+//            return number;
+//        }
+//        console.log (returnTwo(2));
+//
+//        function returnName(name){
+//            return name;
+//        }
+//        console.log (returnName("Paul"));
+//
+//        function addThree(number){
+//            return number + 3;
+//
+//        }
+//        console.log (addThree(3));
+//
+//        function sayString(sayString){
+//
+//            return sayString;
+//
+//        }
+//        console.log (sayString("say string"));
+//
+//        function sayHowdy(){
+//            console.log ("Howdy");
+//        }
+//        sayHowdy();
+//
+//        function identity(input){
+//            return input;
+//        }
+//        var that = identity("Pablo");
+//
+//        console.log (that);
+//
+//        function getRandomNumber(min, max){
+//           return Math.floor((Math.random() * max)+min);
+//
+//        }
+//
+//        alert ("Your First Number Is "+getRandomNumber(1,100))
+////        console.log (getRandomNumber(1,100));
+//
+////        function first(input) {
+////            var str = "HELLO WORLD";
+////            var res = str.charAt(str.length-1);
+////        }
+////        console.log
+//
+//        var random = Math.floor((Math.random()* 100)+1);
+//        alert("But Your Random Number Is : " + random.toString());
+//        function isOdd(numberToTest){
+//            (numberToTest % 2 === 1) ? alert("Which Is Odd!") : alert("Which Is Even!");
+//        }
+//        isOdd(random);
+//
+//        console.log("Before Confirm...");
+//
+//        var confirmed = confirm("Click OK To Give Me All Your Money");
+//        if (confirmed){
+//            alert("HAHAHA You Fool!");
+//        } else {
+//            alert("Awww They Clicked Cancel :(");
+//        }
+//        console.log("After Confirm...");
+//
+//        var userName = "";
+//        while (userName === ""){
+//            userName = prompt("So, What Is Your Name")
+//        }
+//        alert("What Up, " + userName + "! You're Broke Now!");
+//        var response = confirm("Are You A Good Person " + userName + "?");
+//        if (response){
+//            alert("Well, That Is Good To Hear");
+//
+//        } else {
+//            alert("Well Alright. Work On That");
+//        }
+//
+//        function squareIt(number) {
+//            return Math.pow(number,random);
+//        }
+//       console.log(squareIt(1, 100));
+//
+//            var favoriteColor = "";
+//            while (favoriteColor === ""){
+//               favoriteColor = prompt("What Is Your Favorite Color " + userName +"?")
+//            }
+//        if ("blue" === favoriteColor){
+//            alert("Mine Too" + userName +"!!");
+//
+//        } else {
+//            alert("Awww, That Is Not My Favorite Color " + userName +" :(");
+//        }
+//        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//        var color = colors[Math.floor(Math.random() * colors.length)];
+//
+//
+//        var favorite= "blue";
+//
+//        if (color === "red"){
+//        console.log("Strawberries are red");
+//
+//        } else if(color === "orange") {
+//            console.log("Nothing Rhymes With Orange");
+//
+//        } else if(color === "yellow") {
+//            console.log("Means I Am Not Finished Yet");
+//
+//        } else if(color === "green") {
+//            console.log("My Real Favorite Color...Dont Tell Anyone");
+//
+//        } else if(color === "blue") {
+//            console.log("blue is the color of the sky");
+//
+//        } else{
+//            console.log("I don't know anything about that color");
+//
+//        }
+//        (color === favorite) ? console.log(color + " is my favorite color!") : console.log(color + " is not my favorite color!")
+
+//          WHILE LOOP(condition after while)
+
+//            var i = 0;
+//            while (i < 10){
+//                console.log("While loop iteration #" + i);
+//                i++;
+//            }
+//        DO WHILE
+
+//            var i = 0;
+//
+//            do {
+//                console.log("While loop iteration #" + i);
+//                i++;
+//            } while (i < 10);
+
+//        WHILE LOOPS
+//            COMPLETE
+//         var i = 1;
+//
+//            while (i < 65536) {
+//                i = i * 2
+//
+//                console.log(i)
+//            }
+
+//        var allCones = Math.floor(Math.random() * 50) + 50;
+//
+//         do {
+//
+//         }
+//        Math.floor(Math.random() * 5) + 1;
+
+
+
+
+
+
+
+
+
+
+
+//        FOR LOOPS
+
+
+
+//        for (var i = 7, j = 1 ; i >= 100; i * j++) {
+//            console.log(i)
+//        }
+
+
+
+
+//        COMPLETE
+
+//         function showMultiplicationTable(input) {
+//             for (var i = 1; i <= 10; i++) {
+//                 console.log((input) + " x " + (i) + " = " + (i * input))
+//             }
+//         }
+//         showMultiplicationTable(7);
+
+
+
+//        incomplete
+
+//        var random = Math.floor(Math.random() * 200) + 20;
+//                console.log("Your Random Number Is : " + random.toString());
+//                function isOdd(numberToTest)
+//
+//                {
+//
+//
+//                    (numberToTest % 2 === 1) ? console.log("Which Is Odd!") : console.log("Which Is Even!");
+//
+//                }
+//                isOdd(random);
+
+
+
+
+
+
+
+
+        //is complete
+//        for (var i = 100; i >= 5; i-=5){
+//            console.log(i);
+//        }
+
+
+
+
+//      i  for (var int i = 1; i <= 9; i++){
+//
+//        }
+//        for (var int j = 0; j < i; j++)
+//            {
+//                Console.log(i);
+
+//        for (var i = 0; i < 10; i++) {
+//            console.log('for loop iteration #' + i);
+//        }
+
+//
+        //
+        //
+        //
+        //
+        //
+        //
+        // IS COMPLETE
+//        for(var i=1; i<=9; i++){
+//            var a='';
+//            for(var j=1; j<=i;j++){
+//                var a=a+''+i;
+//            }
+//
+//            console.log(a);
+//        }
+
+
+//            BASICALLY DONE
+//       var oddNumber= prompt("Please Enter An Odd Number Between 1-50")
+//        console.log("Random Number To Skip Is: " + oddNumber);
+//        var i = 0;
+//
+//        while (i < 50){
+//            i++;
+//            if (i == oddNumber){
+//                console.log("This Is The Number We Are Skipping: " + oddNumber);
+//
+//                continue;}
+//                if (i % 2 == 0)
+//                continue;{
+//            }
+//            console.log("Here is an odd number: " + i)
+//
+//        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
+
+<!--//use a while loop when you need to do something an unkonwn number of times-->
+<!--//        do-while loop: needs to happen at least once-->
+<!--//        for loop when you want to loop a known number of times-->
+<!--//        break- prematurely stop a loop-->
+<!--//        continue skip a loop itteration-->
+<!--Abstraction = finding the underlying pattern-->
+<!--VARIABLES ARE AN ABSTRACTION FOR VALUES AND DATA TYPE-->
+<!--Values = represent themselves-->
+<!--Conditionals= abstract out decisions ( if , if else etc) want the code itself to make the decision and we figure out how to represent the decision-->
+
+<!--functions= abstract a sequence of steps(process) and we can name this process-->
+
+<!--loops abstract repetition-->
+    <!--what is repeated-->
+    <!--how many times that code is repeated-->
+
+
+
+

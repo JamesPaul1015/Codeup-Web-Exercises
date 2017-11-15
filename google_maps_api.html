@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <style type="text/css">
+        #map-canvas {
+            width: 770px;
+            height: 481px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!-- div to hold map -->
+<div id="map-canvas"></div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC85yqmI9_C6jElbp34vVRa9cqpM2VzUpk"></script>
+
+<!-- Script to show address on map -->
+<script type="text/javascript">
+    (function() {
+        "use strict";
+
+        // Set our map options
+        var mapOptions = {
+            // Set the zoom level
+            zoom: 19,
+
+            // This sets the center of the map at our location
+            center: {
+                lat:  29.426791,
+                lng: -98.489602
+            }
+
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        var geocoder = new google.maps.Geocoder();
+        map.setMapTypeId('satellite');
+
+        // Include code from previous example
+
+// Set our address to geocode
+        var address = "7211 Faros Ct, Live Oak, Texas, 78233";
+
+
+
+// Init geocoder object
+        var geocoder = new google.maps.Geocoder();
+
+// Geocode our address
+        geocoder.geocode({ "address": address }, function(results, status) {
+
+            // Check for a successful result
+            if (status == google.maps.GeocoderStatus.OK) {
+
+                // Recenter the map over the address
+                map.setCenter(results[0].geometry.location);
+            } else {
+
+                // Show an error message with the status if our request fails
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
+        });
+
+        // Create lat and long for our marker position
+
+
+
+         var momsHouse = { lat: 29.5489737044034, lng: -98.34755748510361};
+
+// Add the marker to our existing map
+        var marker = new google.maps.Marker({
+            position: momsHouse,
+            map: map
+
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+
+        // Create a new infoWindow object with content
+
+        var infowindow = new google.maps.InfoWindow({
+            title: "Moms House",
+            content: "Nothing Better Than Home Cooking" + "<br>" + "Great Family Atmosphere And Always Lots of Beer!" + "<br>" +"Absolutely Can Not Beat The Prices!!"
+        });
+
+// Open the window using our map and marker
+        infowindow.open(map, marker);
+
+
+
+
+
+
+
+
+
+        map.addListener("click", function(e){
+            var latitude = e.latLng.lat();
+            var longitude = e.latLng.lng();
+            console.log("latitude : " + latitude +" longitude : " + longitude);
+
+
+
+
+
+
+
+
+        });
+
+
+
+        // Render the map
+    })();
+
+
+
+
+
+
+
+
+</script>
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

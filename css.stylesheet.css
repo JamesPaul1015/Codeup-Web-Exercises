@@ -1,0 +1,32 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url: pizza-pic.png;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;}
+
+main{
+    background-color: transparent;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    horiz-align: 50%;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+}
+h1 {
+    text: larger;
+    float: left;
+}
