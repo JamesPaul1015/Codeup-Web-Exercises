@@ -50,7 +50,7 @@
 // let emails = [];
 // let names = [];
 //
-// // TODO: rewrite the following using arrow functions
+// // TODO: rewrite the following using arrow functions_js.html
 //
 //
 //
